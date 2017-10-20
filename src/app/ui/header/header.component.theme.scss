@@ -1,0 +1,28 @@
+
+@import '~@angular/material/theming';
+
+@mixin header-theme($theme, $red) {
+
+    $primary: map-get($theme, primary);
+    $secondary: map-get($theme, accent);
+    $warn:  map-get($theme, warn);
+    
+
+
+    .protos-header {
+        background-color: mat-color($primary);  
+        -webkit-transition: background-color 0.1s linear;
+        -moz-transition: background-color 0.1s linear;
+        -ms-transition: background-color 0.1s linear;
+        -o-transition: background-color 0.1s linear;
+        transition: background-color 0.1s linear;
+    }
+
+
+    .logo-sitetitle {
+        color: mat-color($secondary);        
+    }
+    .links a {
+        color: #71737a;
+    }        
+}

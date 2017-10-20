@@ -1,0 +1,11 @@
+
+@import '~@angular/material/theming';
+
+@mixin home-theme($theme, $red) {
+
+    $primary: map-get($theme, primary);
+    $secondary: map-get($theme, accent);
+    $warn:  map-get($theme, warn);
+    
+
+}

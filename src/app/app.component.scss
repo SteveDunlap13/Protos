@@ -1,0 +1,28 @@
+// Global styles on app component /w view encapsulation none
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', Verdana, Gotham, sans-serif;
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    } 
+}
+
+article {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+protos-header,
+protos-footer {
+    margin: 0;
+    padding: 0;
+}
