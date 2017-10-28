@@ -1,0 +1,43 @@
+.gray {
+  color: #63666A !important; }
+
+.green {
+  color: #78BE20 !important; }
+
+.orange {
+  color: #F2A900 !important; }
+
+.yellow {
+  color: #FFD800 !important; }
+
+.blue {
+  color: #418FDE !important; }
+
+.teal {
+  color: #00AEC7 !important; }
+
+.red {
+  color: #F26363 !important; }
+
+.dataTable tbody tr:hover {
+  background-color: rgba(242, 169, 0, 0.6); }
+
+/*
+.required {
+    border-left: 5px solid $green;
+}
+
+
+.required-error, .required-error > button {
+    border-left: 5px solid $red;
+}
+
+li.required {
+    border-left: 5px solid $green;
+}
+*/
+.ng-valid[required], .ng-valid.required {
+  border-left: 5px solid #78BE20; }
+
+.ng-invalid:not(form) {
+  border-left: 5px solid #F26363; }
