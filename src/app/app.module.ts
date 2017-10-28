@@ -5,8 +5,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import 'hammerjs';
 
@@ -30,7 +31,9 @@ import {
 import {
   LoadingSpinnerComponent,
   LoadingSpinnerService,
-  ConfigurationService
+  ConfigurationService,
+  InMemoryApiService,
+  PatientsService
 } from './services';
 
 
@@ -53,7 +56,8 @@ export function init(config: ConfigurationService) {
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule,
+    HttpClientModule,
+    InMemoryWebApiModule.forRoot(InMemoryApiService),
 
     RouterModule.forRoot(AppRoutes)
   ],
@@ -79,7 +83,8 @@ export function init(config: ConfigurationService) {
     },
     ConfigurationService,
 
-    LoadingSpinnerService
+    LoadingSpinnerService,
+    PatientsService
   ],
 
   entryComponents: [
